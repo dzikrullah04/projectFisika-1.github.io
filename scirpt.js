@@ -37,12 +37,14 @@
 // rumus hitung
   // Tambahkan event listener pada kedua input untuk menghitung penjumlahan secara otomatis
   var input1 = document.getElementById('r');
+  var input11 = document.getElementById('rr');
   var input2 = document.getElementById('q1');
   var input22 = document.getElementById('q11');
   var input3 = document.getElementById('q2');
   var input33 = document.getElementById('q21');
 
   input1.addEventListener('input', hitungPenjumlahan);
+  input11.addEventListener('input', hitungPenjumlahan);
   input2.addEventListener('input', hitungPenjumlahan);
   input22.addEventListener('input', hitungPenjumlahan);
   input3.addEventListener('input', hitungPenjumlahan);
@@ -51,6 +53,7 @@
 function hitungPenjumlahan() {
 	// Ambil nilai dari input angka pertama dan kedua
 	const r = parseFloat(document.getElementById('r').value);
+	const rr = parseFloat(document.getElementById('rr').value);
 	const q1 = parseFloat(document.getElementById('q1').value);
 	const q11 = parseFloat(document.getElementById('q11').value);
 	const q2 = parseFloat(document.getElementById('q2').value);
@@ -62,9 +65,11 @@ function hitungPenjumlahan() {
 	const Q1 = q1 * Q11;
 	const Q2 = q2 * Q21;
 	const q = Q1 * Q2;
-	const rr = r * r;
+	const RR = 10 ** rr;
+	const R = r * RR;
+	const RRR = R * R;
 	const k = 9 * 10 ** 9;
-	const qr = q / rr;
+	const qr = q / RRR;
 	const hasil = qr * k;
 	console.log(hasil);
 	
