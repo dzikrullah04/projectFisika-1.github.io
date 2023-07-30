@@ -225,6 +225,11 @@ form button:hover {
 .garis-putus {
   display: flex;
 }
+.garis {
+  height: 100px;
+
+  margin-top: -60px;
+}
 .d-flex {
   display: flex;
 }
@@ -237,7 +242,9 @@ form button:hover {
   font-weight: 800;
 }
 
-
+.wrap-F {
+margin-top: 40px;
+}
 
 .coba {
   font-size: 20px;
