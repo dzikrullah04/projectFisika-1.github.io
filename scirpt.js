@@ -38,20 +38,30 @@
   // Tambahkan event listener pada kedua input untuk menghitung penjumlahan secara otomatis
   var input1 = document.getElementById('r');
   var input2 = document.getElementById('q1');
+  var input22 = document.getElementById('q11');
   var input3 = document.getElementById('q2');
+  var input33 = document.getElementById('q21');
 
   input1.addEventListener('input', hitungPenjumlahan);
   input2.addEventListener('input', hitungPenjumlahan);
+  input22.addEventListener('input', hitungPenjumlahan);
   input3.addEventListener('input', hitungPenjumlahan);
+  input33.addEventListener('input', hitungPenjumlahan);
 
 function hitungPenjumlahan() {
 	// Ambil nilai dari input angka pertama dan kedua
 	const r = parseFloat(document.getElementById('r').value);
 	const q1 = parseFloat(document.getElementById('q1').value);
+	const q11 = parseFloat(document.getElementById('q11').value);
 	const q2 = parseFloat(document.getElementById('q2').value);
+	const q21 = parseFloat(document.getElementById('q21').value);
 
 	// Lakukan penjumlahan
-	const q = q1 * q2;
+	const Q11 = 10 ** q11;
+	const Q21 = 10 ** q21;
+	const Q1 = q1 * Q11;
+	const Q2 = q2 * Q21;
+	const q = Q1 * Q2;
 	const rr = r * r;
 	const k = 9 * 10 ** 9;
 	const qr = q / rr;

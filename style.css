@@ -257,7 +257,9 @@ margin-top: 40px;
 
 /* form */
 
-
+.pangkat {
+  width: 20px !important; 
+}
  label
  ,input {
   margin-bottom: 10px;
