@@ -92,7 +92,7 @@ const hasilAkhir = `${angkaUtamaBerPangkat} x 10^${angkaUtama}`;
 
 	// Tampilkan hasil penjumlahan di elemen <p>
 	var resultElement = document.getElementById('result');
-	resultElement.textContent = "Jawaban = " + hasilAkhir + "N";
+	resultElement.textContent = "F = " + hasilAkhir + "N";
   }
 
 
