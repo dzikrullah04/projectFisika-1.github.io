@@ -294,3 +294,7 @@ input[type="number"] {
 .logo {
   border-radius: 40px;
 }
+.absolute {
+  position: absolute;
+}
+
